@@ -1,0 +1,29 @@
+.App {
+	background-color: #fafafa;
+	min-height: 100vh;
+}
+
+.App__Content {
+	border-top: 7vh;
+	border-color:white;
+	border-style: solid;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.Big-Text {
+	color:black;
+	font-size: 40px;
+	text-align: center;
+}
+
+.Middle-Text {
+	color:black;
+	font-size: 25px;
+}
+
+.Small__Text {
+	color:black;
+	font-size: 18px;
+}

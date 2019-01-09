@@ -1,0 +1,53 @@
+.Header {
+	display:flex;
+	flex-direction: row;
+	background-color: #d6f9ff;
+	justify-content: center;
+	align-items: center;
+	height: 7vh;
+	max-height: 100px;
+	position: fixed;
+	z-index: 101;
+	width: 100vw;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: #d3d9de;
+}
+
+.HeaderLink {
+	text-decoration: none;
+	flex:1;
+	color:#585858;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.HeaderLink:focus {
+	outline: none;
+}
+
+.HeaderLink:hover {
+	color:#c3c3c3;
+  background-image:
+   radial-gradient(1px 45% at 0% 50%, rgba(0,0,0,.6), transparent),
+   radial-gradient(1px 45% at 100% 50%, rgba(0,0,0,.6), transparent); 
+}
+
+.HeaderLink:active {
+	background: #ffffff;
+	background: #e1ffff;
+background: #d6f9ff;
+background: -webkit-linear-gradient(#d6f9ff 0%, #9ee8fa 100%);
+background: -o-linear-gradient(#d6f9ff 0%, #9ee8fa 100%);
+background: linear-gradient(#d6f9ff 0%, #9ee8fa 100%);
+}
+
+.HeaderLink--Active {
+	color:#d2b18f;
+}
+
+.Title {
+	text-align: center;
+}

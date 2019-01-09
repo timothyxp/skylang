@@ -1,0 +1,11 @@
+.JoinForm {
+	border-top: 5vh;
+	border-bottom: 5vh;
+	border-style: solid;
+	border-color: white;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

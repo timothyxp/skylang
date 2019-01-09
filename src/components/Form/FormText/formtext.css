@@ -1,0 +1,16 @@
+.FormText {
+	background-color:#ffffff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #d3d9de;
+	border-radius: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+	flex-shrink: 1;
+	min-width: 10px;
+	height: 100%;
+}
+
+.FormText {
+	outline: none;
+}
