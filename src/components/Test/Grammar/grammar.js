@@ -22,8 +22,13 @@ class Grammar extends React.Component {
 	}
 
 	handleSubmit = () => {
-		console.log(this.state.answers);
-		this.props.onSubmit(this.state.answers);
+		let all=this.state.grammar.length;
+		let correct=0;
+		for (let i=0; i<all; i++) {
+			if(this.state.grammar[i].correct===this.state.answers[i])
+				correct++;
+		}
+		this.props.onSubmit(this.state.answers, correct, all);
 	}
 
 	render() {

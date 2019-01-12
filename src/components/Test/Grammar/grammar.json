@@ -5,210 +5,240 @@
       "a":"run",
       "b":"runs",
       "c":"is running",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
       "question":"Be quiet! The baby … in the bedroom.",
       "a":"is sleeping",
       "b":"sleeps",
       "c":"is sleep",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"a"
     },
     {
       "question":"Olaf … jeans.",
       "a":"isn’t wear",
       "b":"doesn’t wear",
       "c":"don’t wear",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
       "question":"Our shop is open … .",
       "a":"at 9 a.m. to 6 p.m.",
       "b":"from 9 a.m. at 6 p.m.",
       "c":"from 9 a.m. till 6 p.m.",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"What … tomorrow morning?",
       "a":"are you doing",
       "b":"do you do",
       "c":"will you do",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"a"
     },
     {
       "question":"Moscow is ... than Paris.",
       "a":"more noisy",
       "b":"noisiest",
       "c":"noisier",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"There aren’t ... tomatoes in the fridge.",
       "a":"some",
       "b":"the",
       "c":"any",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"We … to India.",
       "a":"never were",
       "b":"never been",
       "c":"have never been",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"How many times … Manhattan?",
       "a":"have you visited",
       "b":"did you visit",
       "c":"were you visiting",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"a"
     },
     {
       "question":"I found my sunglasses while I … the room.",
       "a":"were clean",
       "b":"cleaned",
       "c":"was cleaning",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"… he had read all the materials, he didn’t pass the exam.",
       "a":"Because",
       "b":"Although",
       "c":"However",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
       "question":"When I entered the office I remembered that I … my credit card at home.",
       "a":"left",
       "b":"was left",
       "c":"had left",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"My best friend … be a dancer.",
       "a":"was",
       "b":"used to",
       "c":"use to",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
       "question":"… some apples in the bag.",
       "a":"There are",
       "b":"They are",
       "c":"It is",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"a"
     },
     {
       "question":"Kate is good at tennis but Jack is … .",
       "a":"gooder",
       "b":"better",
       "c":"more good",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
       "question":"Emily was really … with the film. It was ... .",
       "a":"disappointed, boring",
       "b":"disappointing, bored",
       "c":"disappointed, bored",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"a"
     },
     {
       "question":"Mike doesn’t like swimming and … .",
       "a":"neither do I",
       "b":"so do I",
       "c":"neither I do",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"a"
     },
     {
       "question":"They … in the garden for 3 hours.",
       "a":"are working",
       "b":"work",
       "c":"have been working",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"We’ve been working for IBM ... last winter.",
       "a":"since",
       "b":"from",
       "c":"for",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"a"
     },
     {
       "question":"If David … smoking, Lisa will marry him.",
       "a":"will give up",
       "b":"gives up",
       "c":"give up",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
       "question":"If I were you I … this car.",
       "a":"sell",
       "b":"will sell",
       "c":"would sell",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"It is so dirty in the kitchen because the room … redecorated now.",
       "a":"was",
       "b":"is",
       "c":"is being",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"I ... my favourite comedy when my friends came.",
       "a":"watched",
       "b":"was watching",
       "c":"have been watching",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
       "question":"My son ... excellent marks at school yesterday.",
       "a":"is given",
       "b":"has been given",
       "c":"was given",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"When I arrived at the station my train ... .",
       "a":"already left",
       "b":"was already left",
       "c":"had already left",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"Mike ... to present his new book on Sunday.",
       "a":"will",
       "b":"is going",
       "c":"must",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
       "question":"I went to the bus stop and I ... wait for half an hour.",
       "a":"must",
       "b":"have to",
       "c":"had to",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"c"
     },
     {
       "question":"By next summer they ... parents.",
       "a":"will have become",
       "b":"will become",
       "c":"have become",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"a"
     },
     {
       "question":"If you ... this before, nothing bad would have happened.",
       "a":"would have said",
       "b":"had said",
       "c":"said",
-      "d":"не знаю"
+      "d":"не знаю",
+      "correct":"b"
     },
     {
         "question": "You ... your granny before you came over!",
         "a": "should call",
         "b": "should have called",
         "c": "should be calling",
-        "d": "не знаю"
+        "d": "не знаю",
+        "correct":"b"
     }
   ]
 }

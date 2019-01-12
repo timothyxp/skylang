@@ -1,0 +1,20 @@
+{
+  "listening":[
+    {
+      "question":"Which word most describes the girl?",
+      "a":"talkative",
+      "b":"hungry",
+      "c":"noisy",
+      "d":"merry",
+      "correct":"b"
+    },
+    {
+      "question":"The speakers talk:",
+      "a":"in the present tense",
+      "b":"in the past tense",
+      "c":"in the future tense",
+      "d":"in all tenses",
+      "correct":"b"
+    }
+  ]
+}

@@ -14,7 +14,6 @@ class Blog extends React.Component {
 		return(
 			<div>
 				<div>Blog</div>
-				<div>{this.r()}</div>
 			</div>
 		);
 	}
