@@ -1,0 +1,24 @@
+.Grammar {
+	background-color: white;
+	margin: 5vh 5vw 5vh 5vw;
+	border-radius: 5vh;
+}
+
+.Grammar__Content {
+	padding:5vh 5vw 5vh 5vw;
+}
+
+.Grammar__Test {
+	display: flex;
+	flex-direction: column;
+}
+
+.Grammar__Question {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.Grammar__Question__Number {
+	margin-right: 3px;
+}

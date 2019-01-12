@@ -5,7 +5,7 @@ class Cost extends React.Component {
 	render() {
 		return(
 			<div className='Cost'>
-				<div className="Cost_Header_Text">
+				<div className="Cost__Header__Text">
 					<div className="Big-Text">Прозрачные цены</div>
 					<div className="Middle-Text">
 						Открыто показываем стоимость занятий,

@@ -1,0 +1,7 @@
+.FormRadio__label {
+	width: 100%;
+} 
+
+.FormRadio__input {
+	border: 2px solid red;
+}

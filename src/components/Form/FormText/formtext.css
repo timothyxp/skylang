@@ -7,6 +7,8 @@
 	padding: 5px;
 	box-sizing: border-box;
 	flex-shrink: 1;
+	flex-grow: 1;
+	max-width: 200px;
 	min-width: 10px;
 	height: 100%;
 }
