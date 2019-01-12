@@ -11,6 +11,10 @@
 	height: 100%;
 }
 
+.FormText__Error {
+	border-color: red;
+}
+
 .FormText {
 	outline: none;
 }

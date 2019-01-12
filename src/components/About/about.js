@@ -1,5 +1,5 @@
 import React from 'react';
-import Join from '../Join/join.js';
+import Join from './Join/join.js';
 import './about.css';
 
 class About extends React.Component {

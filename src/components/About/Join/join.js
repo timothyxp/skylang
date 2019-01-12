@@ -1,9 +1,9 @@
 import React from 'react';
-import FormRow from '../Form/FormRow/FormRow.js';
-import FormColumn from '../Form/FormColumn/FormColumn.js';
-import FormText from '../Form/FormText/formtext.js';
-import Button from '../Form/Button/button.js';
-import emailjs from '../../emailjs/emailjs.js';
+import FormRow from '../../Form/FormRow/FormRow.js';
+import FormColumn from '../../Form/FormColumn/FormColumn.js';
+import FormText from '../../Form/FormText/formtext.js';
+import Button from '../../Form/Button/button.js';
+import emailjs from '../../../emailjs/emailjs.js';
 
 import './join.css';
 
@@ -23,6 +23,12 @@ class Join extends React.Component {
 		});
 	}
 
+	handleInputFocus = event => {
+		this.setState({
+			['error_'+event.target.name]:false
+		});
+	}
+
 	clearForm() {
 		this.setState({
 			name:'',
@@ -31,17 +37,55 @@ class Join extends React.Component {
 		});
 	}
 
+	validationForm() {
+		let check = true;
+		if(this.state.name==='') {
+			this.setState({
+				error_name:true
+			});
+			check=false;
+		} else {
+			this.setState({
+				error_name:false
+			});
+		}
+		if(this.state.email==='') {
+			this.setState({
+				error_email:true
+			});
+			check=false;
+		} else {
+			this.setState({
+				error_email:false
+			});
+		}
+		if (!(this.state.number.length===11 ||
+			this.state.number.length!==12 && this.state.number[0]==='+')) {
+			this.setState({
+				error_number:true
+			});
+			check=false;
+		} else {
+			this.setState({
+				error_number:false
+			});
+		}
+		return check;
+	}
+
 	send = event => {
 		event.preventDefault();
+		if(!this.validationForm())
+			return;
 		let template_params = {
-		    "name": this.state.number,
+		    "name": this.state.name,
     		"email": this.state.email,
     		"number": this.state.number,
     		"message_html": ""
 		};
 		
 		emailjs.send('yahoo', 'template_W7sWOdTA', template_params)
-		.then(response=>{
+		.then(response => {
 			console.log('response', response.status, response.text);
 		}, error => {
 			console.log('error', error);
@@ -59,16 +103,21 @@ class Join extends React.Component {
 							<FormText name="name"
 								onChange={this.handleInputChange}
 								placeholder="Enter your name"
-								value={this.state.name}/>
+								value={this.state.name}
+								error={this.state.error_name ? true : false}
+								onFocus={this.handleInputFocus}/>
 							<FormText name="email"
 								onChange={this.handleInputChange}
 								placeholder="Enter your e-mail"
-								value={this.state.email}/>
+								value={this.state.email}
+								error={this.state.error_email ? true : false}
+								onFocus={this.handleInputFocus}/>
 							<FormText name="number"
 								onChange={this.handleInputChange}
 								placeholder="Enter your number"
 								value={this.state.number}
-								type="tel"/>
+								error={this.state.error_number ? true : false}
+								onFocus={this.handleInputFocus}/>
 							<Button type="submit">Send</Button>
 						</FormRow>
 				</div>
