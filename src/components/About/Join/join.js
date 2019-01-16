@@ -60,7 +60,7 @@ class Join extends React.Component {
 			});
 		}
 		if (!(this.state.number.length===11 ||
-			this.state.number.length!==12 && this.state.number[0]==='+')) {
+			(this.state.number.length!==12 && this.state.number[0]==='+'))) {
 			this.setState({
 				error_number:true
 			});
@@ -77,10 +77,14 @@ class Join extends React.Component {
 		event.preventDefault();
 		if(!this.validationForm())
 			return;
+
+		let test = this.props.test ? this.props.test: "Не пройдено";
+
 		let template_params = {
 		    "name": this.state.name,
     		"email": this.state.email,
     		"number": this.state.number,
+    		"test": test,
     		"message_html": ""
 		};
 		

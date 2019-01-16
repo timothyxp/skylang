@@ -11,7 +11,8 @@ class Grammar extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			grammar:grammar.grammar
+			grammar:grammar.grammar,
+			answers:[]
 		};
 	}
 

@@ -5,7 +5,6 @@ import Audio from '../../Pure/Audio/audio.js';
 import listening from './listening.json';
 import FormColumn from '../../Form/FormColumn/FormColumn.js';
 import FormRadio from '../../Form/FormRadio/formradio.js';
-import ReactAudioPlayer from 'react-audio-player';
 
 import './listening.css';
 
@@ -13,7 +12,8 @@ class Listening extends React.Component {
 	constructor() {
 		super();
 		this.state={
-			listening:listening.listening
+			listening:listening.listening,
+			answers:[]
 		};
 		console.log(this.state.listening);
 	}

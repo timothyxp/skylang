@@ -1,0 +1,20 @@
+.Test-Finish_Header {
+	background-color: white;
+	margin: 5vh 5vw 5vh 5vw;
+	border-radius: 5vh;
+}
+
+.Test-Finish_Header_Text {
+	text-align: center;
+	padding-top: 5vh;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	padding-bottom: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Test-Finish_Results {
+	margin-bottom: 5vh;
+}

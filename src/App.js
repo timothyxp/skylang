@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Header from './components/Header/header.js';
-import {Switch,Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import About from './components/About/about.js';
 import Blog from './components/Blog/blog.js';
 import Cost from './components/Cost/cost.js';
