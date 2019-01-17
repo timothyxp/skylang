@@ -20,7 +20,7 @@ class Test extends React.Component {
 		this.setState({
 			grammar:{...this.state.grammar,...answers},
 			correct:this.state.correct+correct,
-			all:this.state.all+all
+			allGrammar:all
 		});
 	}
 
@@ -28,7 +28,7 @@ class Test extends React.Component {
 		this.setState({
 			listening:{...this.state.listening,...answers},
 			correct:this.state.correct+correct,
-			all:this.state.all+all
+			allListening:all
 		});
 	}
 
@@ -41,7 +41,8 @@ class Test extends React.Component {
 				<Route path="/test/2" component={() => 
 					<Listening onSubmit={this.handleSubmitListening}/>}/>
 				<Route path="/test/3" component ={() => 
-					<TestFinish correct={this.state.correct} all={this.state.all}/>}/>
+					<TestFinish correct={this.state.correct} 
+					all={this.state.allListening+this.state.allGrammar}/>}/>
 			</div>
 		);
 	}

@@ -5,8 +5,10 @@ import './about.css';
 class About extends React.Component {
 	render() {
 		return(
-			<div className="JoinForm">
-				<Join/>
+			<div className="About">
+				<div className="JoinForm">
+					<Join/>
+				</div>
 			</div>
 		);
 	}

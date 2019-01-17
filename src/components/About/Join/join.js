@@ -102,28 +102,28 @@ class Join extends React.Component {
 		return(
 			<div className="Join_App">
 				<div className="Big-Text">Пройдите первый урок бесплатно</div>
-					<div className="Form_Join">
-						<FormRow onSubmit={this.send}>
-							<FormText name="name"
-								onChange={this.handleInputChange}
-								placeholder="Enter your name"
-								value={this.state.name}
-								error={this.state.error_name ? true : false}
-								onFocus={this.handleInputFocus}/>
-							<FormText name="email"
-								onChange={this.handleInputChange}
-								placeholder="Enter your e-mail"
-								value={this.state.email}
-								error={this.state.error_email ? true : false}
-								onFocus={this.handleInputFocus}/>
-							<FormText name="number"
-								onChange={this.handleInputChange}
-								placeholder="Enter your number"
-								value={this.state.number}
-								error={this.state.error_number ? true : false}
-								onFocus={this.handleInputFocus}/>
-							<Button type="submit">Send</Button>
-						</FormRow>
+				<div className="Form_Join">
+					<FormRow onSubmit={this.send}>
+						<FormText name="name"
+							onChange={this.handleInputChange}
+							placeholder="Enter your name"
+							value={this.state.name}
+							error={this.state.error_name ? true : false}
+							onFocus={this.handleInputFocus}/>
+						<FormText name="email"
+							onChange={this.handleInputChange}
+							placeholder="Enter your e-mail"
+							value={this.state.email}
+							error={this.state.error_email ? true : false}
+							onFocus={this.handleInputFocus}/>
+						<FormText name="number"
+							onChange={this.handleInputChange}
+							placeholder="Enter your number"
+							value={this.state.number}
+							error={this.state.error_number ? true : false}
+							onFocus={this.handleInputFocus}/>
+						<Button type="submit">Send</Button>
+					</FormRow>
 				</div>
 			</div>
 		);
