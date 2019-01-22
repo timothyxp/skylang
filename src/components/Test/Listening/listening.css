@@ -13,6 +13,11 @@
 	flex-direction: column;
 }
 
+.Listening_Audio {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 .Listening__Question {
 	width: 100%;
 	display: flex;

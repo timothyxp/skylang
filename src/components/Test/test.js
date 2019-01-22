@@ -12,7 +12,8 @@ class Test extends React.Component {
 		super();
 		this.state={
 			correct:0,
-			all:0
+			allGrammar:0,
+			allListening:0
 		};
 	}
 
@@ -20,7 +21,7 @@ class Test extends React.Component {
 		this.setState({
 			grammar:{...this.state.grammar,...answers},
 			correct:this.state.correct+correct,
-			allGrammar:all
+			allGrammar:Number.isNaN(all)?0:all
 		});
 	}
 
@@ -28,7 +29,7 @@ class Test extends React.Component {
 		this.setState({
 			listening:{...this.state.listening,...answers},
 			correct:this.state.correct+correct,
-			allListening:all
+			allListening:Number.isNaN(all)?0:all
 		});
 	}
 

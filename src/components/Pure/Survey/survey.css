@@ -1,0 +1,9 @@
+.Survey__Question {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.Survey__Question__Number {
+	margin-right: 3px;
+}

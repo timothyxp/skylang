@@ -2,9 +2,9 @@ import React from 'react';
 import {NavLink}	 from 'react-router-dom';
 import Button from '../../Form/Button/button.js';
 import Audio from '../../Pure/Audio/audio.js';
-import listening from './listening.json';
-import FormColumn from '../../Form/FormColumn/FormColumn.js';
-import FormRadio from '../../Form/FormRadio/formradio.js';
+import listening1 from './listening1.json';
+import listening2 from './listening2.json';
+import Survey from '../../Pure/Survey/survey.js';
 
 import './listening.css';
 
@@ -12,10 +12,9 @@ class Listening extends React.Component {
 	constructor() {
 		super();
 		this.state={
-			listening:listening.listening,
+			listening:listening1.listening.concat(listening2.listening),
 			answers:[]
 		};
-		console.log(this.state.listening);
 	}
 
 	handleInputChange = event => {
@@ -41,31 +40,17 @@ class Listening extends React.Component {
 				<div className="Listening__Content">
 					<div className="Big-Text">Listening</div>
 					<div className="Listening__Test">
-						<Audio src="/audio/track1.ogg"/>
-						{
-							this.state.listening.map((key,index)=>{
-								return (
-								<FormColumn key={index}>
-									<div className="Listening__Question">
-										<div className="Listening__Question__Number">
-										{index+1}.</div>
-										<div>{key.question}</div>
-									</div>
-									<FormRadio type="radio" name={index} value="a" 
-									onChange={this.handleInputChange}>
-										{key.a}</FormRadio>
-									<FormRadio type="radio" name={index} value="b"
-									 onChange={this.handleInputChange}>
-										{key.b}</FormRadio>
-									<FormRadio type="radio" name={index} value="c"
-									onChange={this.handleInputChange}>
-										{key.c}</FormRadio>
-									<FormRadio type="radio" name={index} value="d"
-									onChange={this.handleInputChange}>
-										{key.d}</FormRadio>
-								</FormColumn>
-								);
-						})}
+						<div className="Listening_Audio">
+							<Audio src="/audio/track1.ogg"/>
+						</div>
+						<Survey test={listening1.listening} 
+						onChange={this.handleInputChange}/>
+						<div className="Listening_Audio">
+							<Audio src="/audio/Track2.mp3"/>
+						</div>
+						<Survey test={listening2.listening}
+						onChange={this.handleInputChange}
+						questionsBefore={listening1.listening.length}/>
 					</div>
 					<div className="Test__Link">
 						<NavLink to="/test/3" >

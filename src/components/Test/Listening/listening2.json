@@ -1,0 +1,28 @@
+{
+  "listening":[
+    {
+      "question":"Toby left Germany for a holiday:",
+      "a":"- to visit his family",
+      "b":"- to visit his girlfriend",
+      "c":"- to go sightseeing",
+      "d":"- to study English",
+      "correct":"b"
+    },
+    {
+      "question":"Where did his plane land?",
+      "a":"- in Germany",
+      "b":"- in Sydney, Australia",
+      "c":"- in Montana, the USA",
+      "d":"- in Montana, Australia",
+      "correct":"c"
+    },
+    {
+      "question":"Who helped Toby with money?",
+      "a":"- his parents",
+      "b":"- his girlfriend",
+      "c":"- friendly people",
+      "d":"- his parents and friends",
+      "correct":"d"
+    }
+  ]
+}
